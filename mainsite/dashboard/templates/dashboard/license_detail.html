@@ -1,0 +1,84 @@
+{% extends 'dashboard/base.html' %}
+
+{% block body %}
+
+<br>
+<br>
+
+<div class="container">
+    <div class="row">
+      <div class="col">
+        <div class="card text-white text-center bg-dark mb-3" style="max-width: 18rem;">
+            <div class="card-header"># DUB Points</div>
+            <div class="card-body">
+              <h1 class="card-text">{{DUB_TotalDUBPoints}}</h1>
+            </div>
+          </div>
+      </div>
+      <div class="col">
+        <div class="card text-white text-center  bg-dark mb-3" style="max-width: 18rem;">
+            <div class="card-header"># Active DUB Points</div>
+            <div class="card-body">
+              <h1 class="card-text">{{DUB_ActiveDUBPoints}}</h1>
+            </div>
+          </div>
+      </div>
+      <div class="col">
+        <div class="card text-white text-center  bg-dark mb-3" style="max-width: 18rem;">
+            <div class="card-header"># Suspended DUB Points</div>
+            <div class="card-body"> 
+              <h1 class="card-text">{{DUB_SuspendedDUBPoints}}</h1>
+            </div>
+          </div>
+      </div>
+      <div class="col">
+        <div class="card text-white text-center  bg-dark mb-3" style="max-width: 18rem;">
+            <div class="card-header"># Recorder DUB Points</div>
+            <div class="card-body"> 
+              <h1 class="card-text">{{DUB_RecorderDUBPoints}}</h1>
+            </div>
+          </div>
+      </div>
+    </div>
+</div>
+<br>
+<br>
+<div class="container">
+<div class="row">
+    <div class="col">
+      <div class="card text-white text-center  bg-dark mb-3" style="max-width: 18rem;">
+          <div class="card-header"># API DUB Points</div>
+          <div class="card-body"> 
+            <h1 class="card-text">{{DUB_APIDUBPoints}}</h1>
+          </div>
+        </div>
+    </div>
+    <div class="col">
+      <div class="card text-white text-center  bg-dark mb-3" style="max-width: 18rem;">
+          <div class="card-header"># Meeting DUB Points</div>
+          <div class="card-body"> 
+            <h1 class="card-text">{{DUB_MeetingDUBPoints}}</h1>
+          </div>
+        </div>
+    </div>
+    <div class="col">
+      <div class="card text-white text-center  bg-dark mb-3" style="max-width: 18rem;">
+          <div class="card-header"># AI DUB Points</div>
+          <div class="card-body">
+            <h1 class="card-text">{{DUB_AIDUBPoints}}</h1>
+          </div>
+        </div>
+    </div>
+    <div class="col">
+      <div class="card text-white text-center  bg-dark mb-3" style="max-width: 18rem;">
+          <div class="card-header"># Non-AI DUB Points</div>
+          <div class="card-body">
+            <h1 class="card-text">{{DUB_NonAIDUBPoints}}</h1>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+{% endblock %}
